@@ -18,12 +18,6 @@ void loadProgram (Program *program)
 
 int main (void)
 {
-	/*Registers A;
-    A.print();
-    A.setRegister(21, 2);
-    A.setPC(102);
-    A.print();*/
-	//cout << "start\n";
 	Registers *registers	= new Registers ();
 	Program	*program	= new Program ();
 
@@ -32,6 +26,6 @@ int main (void)
 	Simulator theSimulator = Simulator (registers, program);
 
 	theSimulator.ui ();
-
+	//comment
 	return 0;
 }
